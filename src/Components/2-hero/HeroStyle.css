@@ -1,0 +1,74 @@
+.container{
+    display: flex;
+    gap:16px;
+    justify-content: space-between;
+    padding:1em;
+    margin-top: 5em;
+    margin-bottom: -1.5em;
+
+}
+
+.AnimIcon{
+    display: flex;
+    width:20em;
+    height: 20rem;
+    margin-right: 9em;
+    margin-top: -3em;
+}
+
+.LeftParty{
+    display: block;
+}
+
+.ImgParty{
+    display:flex;
+}
+
+.Avatar{
+    width: 100px;
+    background: transparent !important;
+    border: 2px solid rgb(133, 97, 30) !important;
+    border-radius: 50%;
+    padding: 2px;
+    box-shadow: 0.5px 0.5px 30px gray;
+}
+
+.icon-verified{
+    color: #3c97c8;
+    margin-top:5em;
+    margin-left:1px;
+}
+
+.icons{
+    margin-top: 25px;
+    display: flex;
+    gap:17px;
+    color:var(--color-text-subtitle);
+}
+
+
+  
+
+@keyframes typeIn {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.title {
+    margin-top: 25px;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typeIn 5s steps(20, end) 1;
+}
+  
+  
+
+.sub-title{
+    margin-top: 5px;
+    color:var(--color-text-subtitle);
+    font-size: 14px;
+}

@@ -1,0 +1,153 @@
+header ul.flex{
+    gap:2em;
+}
+
+header nav.navbar {
+    background-color: var(--color-background-navbar);
+    padding: 0.8rem 2rem;
+    border-radius: 2em;
+    box-shadow:1px 1px 20px rgb(143,150,152,0.7) ;/*3eme valeur pour light autour du box*/
+}
+
+header ul li a{
+    color:var(--color-text-header);
+    opacity:1;
+}
+
+header ul li a:hover{
+    color:var(--color-hover);
+    transition:0.5s linear;
+    border-bottom: 1px;
+    border-radius: 10px;
+    text-shadow: 0px 0px 1rem var(--color-hover);
+}
+
+header button{
+    font-size:16px;
+    margin-right:2em ;
+    font-size:20px;
+    color:var(--color-text-subtitle);
+}
+
+.Mood,.MenuDiv{
+    padding-left:5.5px;
+    padding-top: 4.5px;
+    width:35px ;
+    height:35px;
+    border-radius:30px;
+    background-color: var(--color-background-navbar);
+    border:2px solid var(--color-divider);
+
+}
+.MenuDiv:hover{
+    border:1px solid rgba(244, 240, 238, 0.3);
+}
+.Mood:hover{
+    border:1px solid rgba(244, 240, 238, 0.3);
+}
+
+
+.icon-moon{
+    color:var(--color-hover);
+}
+
+header {
+    display: flex;
+    justify-content:space-between;
+    padding: 0 2.4rem;
+    margin-top: 3rem;
+    margin-bottom: 6.5rem;
+}
+
+header button.Menu{
+    display:none;
+}
+
+.closeBtn{
+    font-size: 1rem;
+    color:var(--color-text-subtitle);
+    transition: 0.3s;
+}
+
+.closeBtn:hover{
+    rotate:180deg;
+}
+
+
+/*notre modal*/
+header div.fixed{
+    position:fixed ;
+    inset:0;/*c-a-dire top: 0;bottom: 0;right: 0;left: 0;*/
+    background-color:rgb(0,0,0,0.5);
+    backdrop-filter: blur(1.5px); 
+    }
+
+.modal {
+    background-color:var(--color-background-main);
+    width: 90%;
+    margin: 2em auto auto;
+    border: 0.01px solid rgba(245, 245, 245, 0.129);
+    border-radius: 2em;
+    position: relative;  
+    animation: MoveModal 1s 1;
+}
+
+@keyframes MoveModal {
+    0%   { scale:0;}
+    60%   { scale:1.2}
+    100%  { scale: 1;}
+}
+
+
+.UlModal{
+    display:block !important;
+    padding: 2em 0 0 3em;
+    
+}
+
+.dividerModal{
+    border-bottom: 1px solid var(--color-divider);
+    margin : 1em 0;
+  }
+
+li.child{
+    margin-bottom: 1.5em ;
+}
+
+p.navigationTitle{
+    margin: 3em 0 0 2em;
+    margin-top: 1em;
+    font-size: 14px;
+    color:var(--color-text-subtitle);
+    text-transform: uppercase;
+}  
+
+.closeBtn{
+    float: right !important;
+    margin-top:-1.2em;
+}
+
+
+@media (max-width:870px) {
+    header nav.navbar{
+        display:none;
+    }
+
+    header button.Menu{
+        display:block;
+    }  
+    
+}
+
+@media (min-width:870px) {
+   
+    header div.fixed{
+        display:none;
+    }
+    .modal{
+        display:none;
+    }
+    .MenuDiv{
+        display: none;
+    }
+}

@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto:ital,wght@0,100;0,500;0,700;1,300;1,400&display=swap');
+
+
+html{
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 0.7px;
+  box-sizing: border-box;
+}
+
+*,*:before,*:after{
+  box-sizing: inherit;
+}
+
+*{
+  margin:0;
+  padding: 0;
+}
+
+:root{
+  --color-background: #000;
+  --color-background-main:#18181B;
+  --color-border-background:#2A2A2B;
+  --color-divider:rgb(42,42,43,1);
+  --color-text-header: rgb(213,213,216);
+  --color-background-navbar: rgb(37,37,41);
+  --color-hover:rgb(186,81,2);
+  --color-pop-up-color:#050505;
+  --color-text-subtitle:rgb(154,154,163);
+}
+
+.light{
+  --color-background: #fff;
+}
+
+body{
+  background-color: var(--color-background);
+  color: #fff;
+} 
+
+.containerApp{
+  width:85%;
+  height: 100%;
+  background-color: var(--color-background-main);
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid var(--color-border-background);
+  padding: 0 3rem;
+}
+
+.divider{
+  border-bottom: 1px solid var(--color-divider);
+  margin : 3em 0;
+}
+
+li{
+  list-style: none;
+}
+
+a,Link{
+  all: unset;
+  transition:0.5s linear;
+}
+
+a:hover{
+  cursor:pointer;
+}
+
+.flex{
+  display:flex;
+}
+
+button{
+  all:unset;
+}
+button:hover{
+  cursor: pointer !important;
+}
+
+button:hover{
+  scale:1.1 ;
+}
+
+button:active{
+  scale:1;
+}
+
+@media (max-width: 1000px){
+  .containerApp{
+    width: 90%;
+    padding: 0 1.7rem;
+  }
+
+  
+}
+
+
+@media (max-width: 600px){
+  .containerApp{
+    width: 98%;
+    padding: 0 1.7rem;
+  }
+}
