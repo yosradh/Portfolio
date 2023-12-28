@@ -1,11 +1,14 @@
-.containerContact{
-    margin: 5em auto;
+.containerContact {
+    margin: 3rem auto; /* Centrer le contenu avec une marge autour */
+    max-width: 1200px; /* Limitation de la largeur pour éviter une largeur trop étirée sur de grands écrans */
+    padding: 0 1rem; /* Ajout de padding sur les côtés pour éviter que le contenu ne touche les bords */
 }
 
-
-.SectionB{
+.SectionB {
     display: flex;
-    gap:3em;
+    flex-wrap: wrap; /* Permettre aux éléments de passer à la ligne si nécessaire */
+    justify-content: space-between;
+    align-items: flex-start; /* Alignement vertical en haut */
 }
 
 .sectionTitle{
@@ -34,11 +37,16 @@ label{
     color:var(--color-text-subtitle);
 }
 
-#email,#message{
+.form {
+    width: 100%; /* Ajuster la largeur pour s'adapter à la SectionB */
+    max-width: 600px; /* Limitation de la largeur du formulaire */
+}
+
+#email,#message,#nomPrenom,#ObjectEmail{
     all: unset;
     background-color: rgba(63,63, 70, 0.15) ;
     border: 1px solid blue;
-    width:15rem;
+    width:18rem;
     padding:0.5rem 1rem;
     margin-left: 1rem;
     border: 1px solid rgba(128, 128, 128, 0.1);
@@ -50,23 +58,27 @@ label{
 
 }
 
-.AdresseSection{
+.AdresseSection,.emailSection,.ObjectSection{
     display: flex;
     margin-top: 24px;
 }
 
-.EmailsSection{
-    display: flex;
+ .NomSection,.ObjectSection{
+    gap:0.5em;
+}
+
+#nomPrenom{
+    margin-left: 2em;
 }
 
 
-#email:focus ,#message:focus{
+#email:focus ,#message:focus,#nomPrenom:focus,#ObjectEmail:focus{
     border: 1px solid rgb(45, 212, 191, 0.5);
     border-radius: 5px;
 }
 
 
-#email:focus ,#message:hover{
+#email:hover ,#message:hover,#nomPrenom:hover,#ObjectEmail:hover{
     border: 1px solid rgb(45, 212, 191, 0.5);
     border-radius: 5px;
 }
@@ -76,7 +88,7 @@ label{
     resize: both !important;
 }
 
-.submit{
+#BtnSubmit{
     background-color: rgba(36, 37, 46 ,1);
     padding: 0.7rem 2rem;
     text-align: center;
@@ -87,34 +99,51 @@ label{
     margin-top: 25px;
     padding-top:5px;
     border: 1px  solid rgba(63 63 70);
-    margin-left: 7.8rem;
-    width: 13rem;
+    width: 16rem;
+    margin-left: 8.4rem;
+
 }
 
-.submit:hover{
+#BtnSubmit:hover{
     scale:0.97;
+    border: 1px solid rgb(45, 212, 191, 0.5);
 }
 
-@media (max-width:700px) {
-        
-    .form{
-        width:80%;
-        padding-left:4px;    
+.ChampObligatoire{
+    font-size: 12px;
+    opacity: 0.7;
+    margin-top: 4em;
+}
+
+
+/* Média query pour les écrans jusqu'à 900px */
+@media (max-width: 900px) {
+    .AdresseSection, .emailSection, .NomSection,.ObjectSection {
+        display: block;
+    }
+    #email, #message,#ObjectEmail, #nomPrenom{
+        margin-left: 0;
+        width:18rem;
+    }
+    .SectionB {
+        display: block;
+        width: 60%;
     }
 
-    .AdresseSection,.EmailsSection{
-        display: block !important;
-    }
-    #email,#message{
-        margin-left: 0;
-    }
-    .submit{
-        margin-left: 0;
+    #BtnSubmit{
+        left: -9em;
+        position: relative;
+        width:16rem;
     }
 
-    .SectionB{
-        display:block;
-        width:60%;
-        margin-left:0.5em;
+}
+
+/* Média query pour les écrans jusqu'à 1300px */
+@media (max-width: 1300px) {
+    #BtnSubmit {
+        margin-left: 8.5rem;
     }
 }
+
+
+

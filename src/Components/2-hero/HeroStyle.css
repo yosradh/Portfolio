@@ -4,7 +4,7 @@
     justify-content: space-between;
     padding:1.5em;
     margin-top: 5em;
-    margin-bottom: -1.5em;
+    margin-bottom: 5em;
 
 }
 
@@ -17,9 +17,8 @@
 
 .LeftParty{
     display: block;
-    margin-left: 4em;
 }
-
+/*
 .ImgParty{
     display:flex;
 }
@@ -38,18 +37,20 @@
     margin-top:5em;
     margin-left:1px;
 }
-
+*/
 .icons{
-    margin-top: 25px;
+    margin-top: 2.5em;
     display: flex;
     gap:25px;
     color:var(--color-text-subtitle);
-    font-size: 23px !important;
+    font-size: 25px !important;
 }
 
+.MailContact:hover,
 .icon-twitter:hover,
 .icon-linkedin1:hover,
-.githubHerro:hover{
+.githubHerro:hover
+{
     font-size: 28px;
     color: white;
     cursor: pointer;
@@ -72,17 +73,45 @@
     animation: typeIn 5s steps(20, end) 1;
 }
   
-  
-
 .sub-title{
-    margin-top: 5px;
+    margin-top: 25px;
     color:var(--color-text-subtitle);
     font-size: 14px;
+    line-height: 1.5;
+    max-width:  45em;
+
 }
 
 .RightParty{
     display: flex;
 }
+
+
+.sub-title.collapsed {
+    max-height: 89px; /* Ajustez cette valeur selon le nombre de lignes souhaitées */
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 15px;
+    max-width: 45em;
+    white-space: normal; /* Permet au texte de se retourner à la ligne */
+}
+
+.sub-title.collapsed::after {
+    content: "..."; /* Les trois points de suspension */
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    background-color: transparent; /* Couleur de fond pour masquer le texte coupé */
+    padding: 5px 0px; /* Espacement autour des points de suspension */
+}
+
+.BtnPlus{
+    color: rgb(77, 77, 242);
+    font-size: 13px;
+    float: right;
+    cursor: pointer;
+}
+
 
 @media(max-width: 800px) {
     

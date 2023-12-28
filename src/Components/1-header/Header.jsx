@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import './HeaderStyle.css';
+import { Outlet, Link } from "react-router-dom";
 
 export default function Header() {
 
@@ -18,14 +19,18 @@ export default function Header() {
         <button  className='Menu icon-menu' onClick={ShowMenu} />
       </div>
 
-      <div />
+      <div className='ImgParty'>
+        <Link to="/"><img src='./Maher1.png' className='Avatar' alet="" /></Link>
+      </div>
+
       <nav className="navbar">
         <ul className='flex'>
-          <li> <a href="/about">About</a> </li>
-          <li> <a href="/contact">Contact</a> </li>
-          <li> <a href="/skills">Skills</a> </li>
-          <li> <a href="/project">Project</a> </li>
-          <li> <a href="/tools">Tools</a> </li>
+
+          <li> <Link to="/competance">Compétences</Link> </li>
+          <li> <Link to="/project">Projects</Link> </li>
+          <li> <Link to="/contact">Experiences</Link> </li>
+          <li> <Link to="/tools">Tools</Link> </li>
+          <li> <Link to="/contact">Contact</Link> </li>
         </ul>
       </nav>
       
@@ -43,14 +48,19 @@ export default function Header() {
           </div>
           
           <ul className='UlModal'>
-            <li> <a href="/about">About</a> </li>
+            <li> <Link to="/competance">Compétences</Link> </li>
             <div className="dividerModal" />
-            <li> <a href="/contact">Contact</a> </li>
+
+            <li> <Link to="/project">Projects</Link> </li>
             <div className="dividerModal" />
-            <li> <a href="/skills">Skills</a> </li>
+
+            <li> <Link to="/contact">Experiences</Link> </li>
             <div className="dividerModal" />
-            <li className="child"> <a href="/project">Project</a> </li>
-            <li> <a href="/tools">Tools</a> </li>
+
+            <li> <Link to="/tools">Tools</Link> </li>
+            <div className="dividerModal" />
+
+            <li className="child"> <Link to="/contact">Contact</Link> </li>
           </ul>            
         </div>
       </div>)

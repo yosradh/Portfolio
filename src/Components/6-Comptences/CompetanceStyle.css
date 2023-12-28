@@ -1,0 +1,90 @@
+
+.LeftParty{
+    margin-left:5em !important;
+    align-items: center;
+    padding:5px;
+    display: block;
+    padding-bottom: 3em;
+
+}
+
+.titreComp{
+    font-size: 20px !important;
+    color: white;
+    text-shadow: 1px 1px 1px rgba(59, 35, 2, 0.308);
+    margin-bottom: 1em;
+    text-align: center;
+    position: relative;
+}
+
+.SubComp{
+    font-size: 13px !important;
+    text-align: center;
+    color: rgb(176, 174, 174) !important;
+    position: relative;
+
+}
+
+
+.RightParty{
+    display: flex;;
+
+}
+
+.skills-container {
+    display: block;
+    width:80%;
+    margin: 1em 2em ;
+}
+
+.skill-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.cv-download {
+    margin-top: 2em !important;
+    padding: 2px 5em;
+    display: block;
+}
+
+.ImgCv{
+    width: 85%;
+    height: auto;
+    transition: transform 0.5s ease-in-out;
+}
+
+#TelechargerTbn{
+    text-align: center;
+    color: rgb(113, 113, 230);
+}
+
+.skill-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 10px;
+}
+
+.skill-name {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.experience-years {
+    font-size: 15px;
+    color: #555;
+}
+
+
+@media (max-width: 1000px)  {
+    
+.cv-download {
+    margin-top: 2em !important;
+    padding: 2px 5em;
+    display: block;
+}
+}

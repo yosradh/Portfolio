@@ -6,7 +6,7 @@ export default function Content() {
     <main>
       <div className="LeftSection">
           <button className="BtProjects active" >all projects</button>
-          <button className="BtTools" >all Tools</button>
+          <button className="BtTools" >Project 1</button>
       </div>
 
       
@@ -20,7 +20,7 @@ export default function Content() {
             <div className="box" >
               <h1 className="titleBox"> {item}</h1>
               <p class="subtitle" id="subtitle">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse id libero magna.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse id libero magna.adipiscing elit. Suspendisse id libero magna.
               </p>
               <div className="footerCard">
                   <div className="iconsCard">
