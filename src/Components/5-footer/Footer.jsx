@@ -4,8 +4,10 @@ import './FooterStyle.css';
 
 export default function Footer() {
   return (
-    <div>
-      footer
-    </div>
+    <footer>
+      <p>
+        2023 Spencer Sharp. All rigths reserved.
+      </p>
+    </footer>
   )
 }

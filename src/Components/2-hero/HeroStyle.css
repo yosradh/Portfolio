@@ -2,7 +2,7 @@
     display: flex;
     gap:16px;
     justify-content: space-between;
-    padding:1em;
+    padding:1.5em;
     margin-top: 5em;
     margin-bottom: -1.5em;
 
@@ -10,14 +10,14 @@
 
 .AnimIcon{
     display: flex;
-    width:20em;
-    height: 20rem;
-    margin-right: 9em;
-    margin-top: -3em;
+    height: 18rem;
+    align-items: flex-end;
+    width:30rem;
 }
 
 .LeftParty{
     display: block;
+    margin-left: 4em;
 }
 
 .ImgParty{
@@ -25,12 +25,12 @@
 }
 
 .Avatar{
-    width: 100px;
-    background: transparent !important;
-    border: 2px solid rgb(133, 97, 30) !important;
+    width: 10em;
+    background: transparent;
+    border: 2px solid rgb(133, 97, 30) ;
     border-radius: 50%;
-    padding: 2px;
-    box-shadow: 0.5px 0.5px 30px gray;
+    padding: 4px;
+    box-shadow: 0.5px 0.5px 10px rgba(133, 97, 30, 0.8);
 }
 
 .icon-verified{
@@ -42,11 +42,18 @@
 .icons{
     margin-top: 25px;
     display: flex;
-    gap:17px;
+    gap:25px;
     color:var(--color-text-subtitle);
+    font-size: 23px !important;
 }
 
-
+.icon-twitter:hover,
+.icon-linkedin1:hover,
+.githubHerro:hover{
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+}
   
 
 @keyframes typeIn {
@@ -71,4 +78,16 @@
     margin-top: 5px;
     color:var(--color-text-subtitle);
     font-size: 14px;
+}
+
+.RightParty{
+    display: flex;
+}
+
+@media(max-width: 800px) {
+    
+    .container{
+        display:block;
+    }
+    
 }

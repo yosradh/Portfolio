@@ -1,0 +1,9 @@
+footer p{
+    color:  rgba(36, 37, 46 ,1);
+    font-size: 13px;
+}
+
+footer{
+    margin-top: -20px;
+    margin-bottom: 3em;
+}

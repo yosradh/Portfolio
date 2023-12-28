@@ -30,7 +30,7 @@ export default function Header() {
       </nav>
       
     <div className="Mood">
-      <button className='icon-moon' />
+      <button className='icon-moon-stars' />
     </div>
       
 

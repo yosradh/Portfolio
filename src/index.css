@@ -99,4 +99,30 @@ button:active{
     width: 98%;
     padding: 0 1.7rem;
   }
+
+  main{
+    gap:2rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+
+.LeftSection{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-right: auto;
+  margin-left: 2em;
+
+}
+
+
+.LeftSection button{
+  width:7rem;
+  padding: 0.8rem 0;
+  font-size: 0.77rem;
+}
+
+
 }

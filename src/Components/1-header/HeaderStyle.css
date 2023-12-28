@@ -7,6 +7,7 @@ header nav.navbar {
     padding: 0.8rem 2rem;
     border-radius: 2em;
     box-shadow:1px 1px 20px rgb(143,150,152,0.7) ;/*3eme valeur pour light autour du box*/
+
 }
 
 header ul li a{
@@ -25,30 +26,40 @@ header ul li a:hover{
 header button{
     font-size:16px;
     margin-right:2em ;
-    font-size:20px;
+    font-size:19px;
     color:var(--color-text-subtitle);
 }
 
 .Mood,.MenuDiv{
-    padding-left:5.5px;
-    padding-top: 4.5px;
-    width:35px ;
-    height:35px;
+    width:53px;
+    height:53px;
     border-radius:30px;
     background-color: var(--color-background-navbar);
     border:2px solid var(--color-divider);
-
 }
+
+
 .MenuDiv:hover{
     border:1px solid rgba(244, 240, 238, 0.3);
 }
+
 .Mood:hover{
     border:1px solid rgba(244, 240, 238, 0.3);
 }
 
 
-.icon-moon{
+.icon-moon-stars{
     color:var(--color-hover);
+    font-size: 44px;
+    position : relative;
+    bottom: px;
+}
+
+.icon-menu{
+    font-size: 24px;
+    position : relative;
+    top:12.5px;
+    left:12px;
 }
 
 header {
@@ -84,12 +95,13 @@ header div.fixed{
 
 .modal {
     background-color:var(--color-background-main);
-    width: 90%;
+    width: 89%;
     margin: 2em auto auto;
     border: 0.01px solid rgba(245, 245, 245, 0.129);
     border-radius: 2em;
     position: relative;  
     animation: MoveModal 1s 1;
+    padding-bottom: 1em;
 }
 
 @keyframes MoveModal {
