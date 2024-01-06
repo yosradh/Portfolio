@@ -18,60 +18,17 @@
 .LeftParty{
     display: block;
 }
-/*
-.ImgParty{
-    display:flex;
-}
-
-.Avatar{
-    width: 10em;
-    background: transparent;
-    border: 2px solid rgb(133, 97, 30) ;
-    border-radius: 50%;
-    padding: 4px;
-    box-shadow: 0.5px 0.5px 10px rgba(133, 97, 30, 0.8);
-}
-
-.icon-verified{
-    color: #3c97c8;
-    margin-top:5em;
-    margin-left:1px;
-}
-*/
-.icons{
-    margin-top: 2.5em;
-    display: flex;
-    gap:25px;
-    color:var(--color-text-subtitle);
-    font-size: 25px !important;
-}
-
-.MailContact:hover,
-.icon-twitter:hover,
-.icon-linkedin1:hover,
-.githubHerro:hover
-{
-    font-size: 28px;
-    color: white;
-    cursor: pointer;
-}
-  
-
-@keyframes typeIn {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
+ 
 
 .title {
     margin-top: 25px;
-    overflow: hidden;
-    white-space: nowrap;
-    animation: typeIn 5s steps(20, end) 1;
+    margin-bottom: 1em !important; 
+    position: relative;
+    left: 100em; /* Définissez la position initiale de l'avatar */
+    animation: animTitre 1s linear forwards; /* Utilisez 'forwards' pour conserver la dernière étape de l'animation */
+    ;
 }
+
   
 .sub-title{
     margin-top: 25px;
@@ -79,32 +36,72 @@
     font-size: 14px;
     line-height: 1.5;
     max-width:  45em;
+    padding-bottom: 15px;
+    animation: animTitre 1s linear forwards; /* Utilisez 'forwards' pour conserver la dernière étape de l'animation */
+    position: relative; 
+}
 
+.VoirPlusBtn{
+    color:rgb(82, 159, 242);
+    cursor  : pointer;
+}
+
+.VoirPlusBtn:hover{
+    font-weight: bold;    
+    font-size: 14px;
+}
+
+.VoirPlusBtn::before{
+    content:"...";
+    display : inline-block;
+    width:2px ;  
+    margin-right: 1em;
+    color:var(--color-text-subtitle);
+    ;
 }
 
 .RightParty{
     display: flex;
+    animation: animTitre 1s linear forwards; /* Utilisez 'forwards' pour conserver la dernière étape de l'animation */
+    position: relative;
+}
+.GroupContact{
+    display:block !important;
+    animation: animTitre 1s linear forwards; /* Utilisez 'forwards' pour conserver la dernière étape de l'animation */
+    position: relative;
 }
 
 
+@keyframes animTitre {
+    0% {
+        left: 100em; 
+    }
+    100% {
+        left: 0; 
+    }
+}
+
+
+
+
+/*
 .sub-title.collapsed {
-    max-height: 89px; /* Ajustez cette valeur selon le nombre de lignes souhaitées */
+    max-height: 89px; 
     overflow: hidden;
     position: relative;
     margin-bottom: 15px;
     max-width: 45em;
-    white-space: normal; /* Permet au texte de se retourner à la ligne */
-}
+    white-space: normal; 
 
 .sub-title.collapsed::after {
-    content: "..."; /* Les trois points de suspension */
+    content: "..."; 
     position: absolute;
     bottom: 0px;
     right: 0px;
-    background-color: transparent; /* Couleur de fond pour masquer le texte coupé */
-    padding: 5px 0px; /* Espacement autour des points de suspension */
+    background-color: transparent; 
+    padding: 5px 0px;
 }
-
+*/
 .BtnPlus{
     color: rgb(77, 77, 242);
     font-size: 13px;
@@ -113,10 +110,70 @@
 }
 
 
+
+.BtnConatct {
+    border: 1px solid rgba(16, 223, 255, 0.958);
+    padding: 10px 10px;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    width: 10em;
+    position: relative;
+    color: rgba(16, 223, 255, 0.958);
+    background: linear-gradient(90deg, rgba(16, 223, 255, 0.89) 50%, transparent 50%);
+    padding: 0.7em 0.5em;
+}
+
+
+.AnimBtn{
+    width:9em;
+    margin-bottom:-1.7em;
+}
+
+.Nom{
+    font-size:25px;
+    color:rgba(16, 223, 255, 0.958);
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typeIn 5s steps(20, end) infinite; 
+    margin-bottom: -1.3em;  
+}
+
+@keyframes typeIn {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+
+  
+  
+  
+
 @media(max-width: 800px) {
     
     .container{
         display:block;
     }
-    
+
+    .BtnConatct{
+        width:10em;
+    }
+
+}
+@media(min-width: 1150px) {    
+    .AnimBtn{
+        z-index: 50;
+    }
+
+    .BtnConatct{
+        padding-top: 0.8em;
+    }
+
+    .GroupContact{
+        display:block !important;
+        width:10em;
+    }
 }
