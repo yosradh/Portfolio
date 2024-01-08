@@ -1,7 +1,7 @@
 import React from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import { Projects } from './content';
 import './DetailsStyle.css';
+import { Projects } from './Projects';
 
 
 export default function DetailsCard() {

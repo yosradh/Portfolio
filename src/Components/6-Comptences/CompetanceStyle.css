@@ -88,7 +88,7 @@
     float: right;
     padding: 15px;
     border-left: 5px solid #e0e0e0;
-    color: #9a9797;
+    color: var(--color-text-experiences);
     font-size: 13px;
 
   }
@@ -205,7 +205,7 @@ a {
 
 /* HARDCOVER FRONT */
 .hardcover_front li:first-child {
-  background-color: #eee;
+  background-color: #333;
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;
   backface-visibility: hidden;

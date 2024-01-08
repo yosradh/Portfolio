@@ -26,15 +26,36 @@ html{
   --color-hover:rgb(186,81,2);
   --color-pop-up-color:#050505;
   --color-text-subtitle:rgb(154,154,163);
+  --color-text-body:#ffffff;
+  --color-background-projects:rgba(36,37,46,1);
+  --color-text-projects:white;
+  --color-background-buttonSubmit: rgba(36, 37, 46 ,1);
+  --color-text-experiences: #9a9797;
+  --color-text-Contact: rgb(8, 87, 197);
+  --color-background-Mood: rgb(37,37,41);
+  --color-border-Mood:rgb(42,42,43,1);
 }
 
 .light{
   --color-background: #fff;
+  --color-background-main:#edecec;
+  --color-border-background:#edecec;
+  --color-text-subtitle:black;
+  --color-text-body:black;
+  --color-background-navbar:#edecec;
+  --color-pop-up-color:#edecec;
+  --color-background-projects:#fff;
+  --color-text-projects:black;
+  --color-background-buttonSubmit:#54728291;
+  --color-text-experiences: black;
+  --color-text-Contact: rgb(8, 87, 197);
+  --color-background-Mood: rgba(168, 168, 169, 0.826);
+  --color-border-Mood:rgba(193, 193, 193, 0.43);
 }
 
 body{
   background-color: var(--color-background);
-  color: #fff;
+  color: var(--color-text-body);
 } 
 
 .containerApp{

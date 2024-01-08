@@ -56,9 +56,21 @@ header button{
     width:60px;
     height:60px;
     border-radius:30px;
-    background-color: var(--color-background-navbar);
-    border:2px solid var(--color-divider);
+    background-color: var(--color-background-Mood);
+    border:2px solid var(--color-border-Mood);
 }
+.Mood{
+    display:flex;
+}
+.Langue{
+    height:30px;
+    width:50px;
+    margin-top:1em;
+    background-color: var(--color-background-main);
+    color:var(--color-text-body);
+    border:2px solid var(--color-background-main);
+}
+
 
 
 .MenuDiv:hover ,.Mood:hover{
@@ -155,6 +167,14 @@ p.navigationTitle{
 .ImgParty{
     display:flex;
     margin-top:-4px;
+}
+
+.icon-sun{
+    color: yellow;
+    font-size: 45px;
+    left:4px;
+    top:4px;
+    position: relative;
 }
 
 .Avatar{
